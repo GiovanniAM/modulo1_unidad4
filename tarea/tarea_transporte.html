@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Transporte</title>
+</head>
+<body>
+    <script>
+
+        const pesoDeCarga = parseInt(prompt('Cuanto pesa lo que lleva?'));
+
+        if (pesoDeCarga > 0 && pesoDeCarga <= 10){
+            document.write(`Te conviene a pie`);
+
+        }else if (pesoDeCarga > 10 && pesoDeCarga <= 30){
+            document.write(`Te conviene llevar en carretilla`);
+
+        }else if (pesoDeCarga > 30 && pesoDeCarga <= 100){
+            document.write(`Te conviene llevar en auto`);
+
+        }else if (pesoDeCarga > 100){
+            document.write(`Te conviene llevar en camion`);
+            
+        }else {
+            document.write(`No se puede transportar eso`);
+        }
+
+    </script>
+</body>
+</html>

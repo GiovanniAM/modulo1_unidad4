@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero mayor</title>
+</head>
+<body>
+    <script>
+
+        const listaDeNumero = [1, 2000, 3, 400, 4, 5, 401, 6, 450, 5000, 1, 9000, 3002, 9500, 1234];
+        
+        let stringDeNumero = undefined;
+        let cantDigitosMayor = 0;
+        let numeroMayor = 0;
+
+        console.log('De la lista: ' + listaDeNumero);
+
+        
+
+        for (let p = 0; p < listaDeNumero.length; p++){
+            
+            stringDeNumero = listaDeNumero[p].toString(); 
+            cantidadDigitos = stringDeNumero.length; 
+            
+            
+            if(cantidadDigitos > cantDigitosMayor){
+                cantDigitosMayor = cantidadDigitos;
+            }
+
+            if(cantidadDigitos == cantDigitosMayor){
+
+                console.log(listaDeNumero[p]);
+
+                
+                if(listaDeNumero[p] > numeroMayor){
+                                    
+                    numeroMayor = listaDeNumero[p];
+                }
+            }
+  
+        } 
+        console.log('El NUMERO MAYOR DE DIGITOS ES: ' + cantDigitosMayor );
+        console.log('EL NUMERO MAYOR ES: ' + numeroMayor );
+
+
+
+    </script>
+</body>
+</html>
